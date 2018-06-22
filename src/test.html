@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>效果</title>
+</head>
+<body>
+	<div style="width: 100px;height: 50px;background: #f00;"></div>
+
+	<script src="lib/jquery/jquery-1.12.4.min.js"></script>
+	<script>
+		$("div").hover(function(){
+			$(this).stop().animate({width: 1000}, 2000)
+					  // .animate({height: 500}, 2000)
+					  // .fadeOut(2000);
+		}, function(){
+			$(this).stop().animate({width: 100}, 2000)
+		});
+	</script>
+</body>
+</html>

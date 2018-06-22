@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="test"></div>
+	<div class="box"></div>
+
+	
+
+
+	<script src="lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="lib/jquery-plugins/xm_carousel/jquery.xm_carousel.js"></script>
+	<script>
+		$(".box").first().carousel({
+			duration: 3000, 
+			imgs: [
+				{href:"#", src:"images/banner.jpg"},
+				{href:"#", src:"images/banner1.jpg"}
+			], 
+			width:855, 
+			height:575
+		});
+
+		$(".test").carousel({
+			duration: 2000, 
+			imgs: [
+				{href:"#", src:"images/m1.jpg"},
+				{href:"#", src:"images/m2.jpg"},
+				{href:"#", src:"images/m3.jpg"},
+				{href:"#", src:"images/m4.jpg"},
+				{href:"#", src:"images/m5.jpg"},
+				{href:"#", src:"images/m6.jpg"},
+				{href:"#", src:"images/m7.jpg"}
+			], 
+			width:250, 
+			height:337
+		});
+
+
+		/*var c = new Carousel({
+			duration: 3000, 
+			imgs: [
+				{href:"#", src:"images/banner.jpg"},
+				{href:"#", src:"images/banner1.jpg"}
+			], 
+			container: ".box", 
+			width:855, 
+			height:575
+		});
+
+		c.autoPlay();
+
+		var c2 = new Carousel({
+			duration: 2000, 
+			imgs: [
+				{href:"#", src:"images/m1.jpg"},
+				{href:"#", src:"images/m2.jpg"},
+				{href:"#", src:"images/m3.jpg"},
+				{href:"#", src:"images/m4.jpg"},
+				{href:"#", src:"images/m5.jpg"},
+				{href:"#", src:"images/m6.jpg"},
+				{href:"#", src:"images/m7.jpg"}
+			], 
+			container: ".test", 
+			width:250, 
+			height:337
+		});
+		c2.autoPlay();*/
+	</script>
+</body>
+</html>
